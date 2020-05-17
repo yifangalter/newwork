@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" >
+    <title>华杉科技-陈嘉晗</title>
+    <link rel="short icon" href="Resources/icon.png">
+    <link rel="stylesheet" href="css/Style.css">
+    <script type="text/javascript" src="CommonClass.js"></script>
+    <style>
+        article{
+            margin: 20px;
+        }
+        h3{
+            color: red;
+            font-size: 18px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #dddddd;
+        }
+        h4{
+            font-size: 14px;
+        }
+        article p{
+            font-size: 12px;
+            text-indent: 2em;
+            line-height: 2em;
+        }
+    </style>
+</head>
+<body>
+<header>平台风采</header>
+<section class="DS_second_section">
+    <img src="Resources/banner4.png" alt="">
+</section>
+<article>
+    <h3 style="color: red;font-size: large;display: inline-block" id="title"></h3>
+    <h4 id="subTitle"></h4>
+    <p id="info"></p>
+</article>
+<script>
+
+    requestMethod('get','aboutus','',function (returnStr) {
+        var title_cont=document.getElementById("title");
+        var subTitle_cont=document.getElementById("subTitle");
+        var info_cont=document.getElementById("info");
+        title_cont.innerHTML=returnStr.title;
+        subTitle_cont.innerHTML=returnStr.subTitle;
+        info_cont.innerHTML=returnStr.info;
+    });
+
+
+</script>
+<footer>
+    <a href="Demo01.html"><img src="Resources/nav10.png"><span>小滴服务</span></a>
+    <a href="Demo021.html"><img src="Resources/nav20.png"><span>企业项目</span></a>
+    <a href="Demo03.html"><img src="Resources/nav30.png"><span>服务流程</span></a>
+    <a href="Demo04.html"><img src="Resources/nav41.png"><span style="color: red">平台风采</span></a>
+    <a href="Demo05.html"><img src="Resources/nav50.png"><span>我的小滴</span></a>
+</footer>
+</body>
+</html>

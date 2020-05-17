@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" >
+    <title>华杉科技-陈嘉晗</title>
+    <link rel="short icon" href="Resources/icon.png">
+    <link rel="stylesheet" href="css/Style.css">
+</head>
+<body>
+<header>
+    <span>小滴服务</span>
+</header>
+<section class="DS_second_section">
+    <img id="bannerImg" src="Resource/banner-1.png" alt="加载失败，请检查网络！">
+    <script>
+        var imgNumber=1;
+        var bannerImg=document.getElementById("bannerImg");
+        function changeImg() {
+            imgNumber++;
+            if(imgNumber>3){
+                imgNumber=1;
+            }
+            bannerImg.src="Resources/banner-"+imgNumber+".png";
+        }
+        setInterval(changeImg(),3000);
+    </script>
+</section>
+<section>
+    <ul>
+        <li>
+            <img src="Resources/index1.png" alt="">
+            <span>企业项目</span>
+        </li>
+        <li>
+            <img src="Resources/index2.png" alt="">
+            <span>平台风采</span>
+        </li>
+        <li>
+            <img src="Resources/index3.png" alt="">
+            <span>报名流程</span>
+        </li>
+    </ul>
+    <ul>
+        <li>
+            <img src="Resources/index4.png" alt="">
+            <span>客户流程</span>
+        </li>
+        <li>
+            <img src="Resources/index5.png" alt="">
+            <span>账务管理</span>
+        </li>
+        <li>
+            <img src="Resources/index6.png" alt="">
+            <span>新闻公告</span>
+        </li>
+    </ul>
+   <ul>
+       <li>
+           <img src="Resources/index7.png" alt="">
+           <span>工程案例</span>
+       </li>
+       <li>
+           <img src="Resources/index8.png" alt="">
+           <span>修改密码</span>
+       </li>
+       <li>
+           <img src="Resources/index9.png" alt="">
+           <span>会员注册</span>
+       </li>
+   </ul>
+</section>
+<footer>
+    <a href="Demo01.html"><img src="Resources/nav11.png"><span style="color: red">小滴服务</span></a>
+    <a href="Demo021.html"><img src="Resources/nav20.png"><span>企业项目</span></a>
+    <a href="Demo03.html"><img src="Resources/nav30.png"><span>服务流程</span></a>
+    <a href="Demo04.html"><img src="Resources/nav40.png"><span>平台风采</span></a>
+    <a href="Demo05.html"><img src="Resources/nav50.png"><span>我的小滴</span></a>
+</footer>
+</body>
+</html>
